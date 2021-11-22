@@ -1089,6 +1089,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66e92771b3d4724192aae39891dd2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxCountCards: 1
+  DefaultParent: {fileID: 1227003618}
 --- !u!114 &660085752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1112,7 +1114,7 @@ MonoBehaviour:
   m_CellSize: {x: 150, y: 200}
   m_Spacing: {x: 25, y: 25}
   m_Constraint: 0
-  m_ConstraintCount: 2
+  m_ConstraintCount: 1
 --- !u!1 &686919041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,7 +1342,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 1
   m_StartCorner: 0
   m_StartAxis: 0
   m_CellSize: {x: 200, y: 250}
@@ -1579,6 +1581,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a66e92771b3d4724192aae39891dd2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxCountCards: 10
+  DefaultParent: {fileID: 1227003618}
 --- !u!1 &1248358502
 GameObject:
   m_ObjectHideFlags: 0
