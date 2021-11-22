@@ -8,8 +8,8 @@ public class StartNameSC : MonoBehaviour
 {
     [SerializeField] Sprite[] spritesMale, spritesFemale;
     [SerializeField] Card[] cards;
-    string[] maleNames = new string[7] { "Макс", "Евгений", "Михаил", "Ярослав", "Алексей", "Тодд", "Никита" };
-    string[] feMalenames = new string[5] { "Екатерина", "Евгения", "Надежда", "Ольга", "Мария" };
+    string[] maleNames = new string[7] { "Max", "Bernard", "Frank", "Conor", "Richard", "Jacob", "Clark" };
+    string[] feMalenames = new string[7] { "Divya", "Jeanne", "Lia", "Julie", "Camilla", "Natalie", "Lydia" };
 
     void Awake()
     {
