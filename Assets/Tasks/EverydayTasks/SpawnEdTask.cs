@@ -9,7 +9,7 @@ public class SpawnEdTask : MonoBehaviour
 
     void Start()
     {
-        for (int i = 1; i< humanCount; i++)
+        for (int i = 1; i< humanCount + 2; i++)
         {
             Transform newEdTask = Instantiate(EdTaskExample);
             newEdTask.SetParent(TasksParent, false);
