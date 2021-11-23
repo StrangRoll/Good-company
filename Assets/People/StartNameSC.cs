@@ -8,6 +8,7 @@ public class StartNameSC : MonoBehaviour
 {
     [SerializeField] Sprite[] spritesMale, spritesFemale;
     [SerializeField] Card[] cards;
+
     string[] maleNames = new string[7] { "Max", "Bernard", "Frank", "Conor", "Richard", "Jacob", "Clark" };
     string[] feMalenames = new string[7] { "Divya", "Jeanne", "Lia", "Julie", "Camilla", "Natalie", "Lydia" };
 
@@ -30,3 +31,6 @@ public class StartNameSC : MonoBehaviour
         }
     }
 }
+
+
+

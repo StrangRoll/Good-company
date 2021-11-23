@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class DropPlace : MonoBehaviour, IDropHandler
 {
     [SerializeField] int maxCountCards;
-    [SerializeField] Transform DefaultParent;
+    private Transform defaultParent;
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -20,9 +20,10 @@ public class DropPlace : MonoBehaviour, IDropHandler
             }
             else
             {
-                transform.GetChild(0).SetParent(DefaultParent);
+                transform.GetChild(0).SetParent(card.defaultParent);
                 card.defaultParent = transform;
             }
         }
     }
+
 }
