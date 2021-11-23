@@ -10,10 +10,12 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     Vector3 offset;
     [HideInInspector] public Transform defaultParent;
     [SerializeField] private Transform megaParent;
+    [HideInInspector] public Transform HandParent;
 
     void Awake()
     {
         mainCamera = Camera.main;
+        HandParent = transform.parent;
     }
 
     public void OnBeginDrag(PointerEventData eventData)

@@ -18,10 +18,10 @@ public class EdTasksDistribution : MonoBehaviour
         allTasks[i].trustAdd = -5;
         allTasks[i].evilScoreAdd = 10;
 
-        allTasks[i].chanceToLose = 10f;
-        allTasks[i].chanceToLost = 0f;
-        allTasks[i].chanceToRecruit = 0f;
-        allTasks[i].ownTrustAdd = 0f;
+        allTasks[i].chanceToLose = 10;
+        allTasks[i].chanceToLost = 0;
+        allTasks[i].chanceToRecruit = 0;
+        allTasks[i].ownTrustAdd = 0;
         i++;
 
         //
@@ -33,10 +33,10 @@ public class EdTasksDistribution : MonoBehaviour
         allTasks[i].trustAdd = 15;
         allTasks[i].evilScoreAdd = 5;
 
-        allTasks[i].chanceToLose = 0f;
-        allTasks[i].chanceToLost = 0f;
-        allTasks[i].chanceToRecruit = 15f;
-        allTasks[i].ownTrustAdd = 0f;
+        allTasks[i].chanceToLose = 0;
+        allTasks[i].chanceToLost = 0;
+        allTasks[i].chanceToRecruit = 15;
+        allTasks[i].ownTrustAdd = 0;
         i++;
 
         //
@@ -48,10 +48,10 @@ public class EdTasksDistribution : MonoBehaviour
         allTasks[i].trustAdd = -5;
         allTasks[i].evilScoreAdd = 15;
 
-        allTasks[i].chanceToLose = 15f;
-        allTasks[i].chanceToLost = 5f;
-        allTasks[i].chanceToRecruit = 0f;
-        allTasks[i].ownTrustAdd = 0f;
+        allTasks[i].chanceToLose = 15;
+        allTasks[i].chanceToLost = 5;
+        allTasks[i].chanceToRecruit = 0;
+        allTasks[i].ownTrustAdd = 0;
         i++;
 
         //
@@ -63,10 +63,10 @@ public class EdTasksDistribution : MonoBehaviour
         allTasks[i].trustAdd = -15;
         allTasks[i].evilScoreAdd = 15;
 
-        allTasks[i].chanceToLose = 25f;
-        allTasks[i].chanceToLost = 15f;
-        allTasks[i].chanceToRecruit = 0f;
-        allTasks[i].ownTrustAdd = 0f;
+        allTasks[i].chanceToLose = 25;
+        allTasks[i].chanceToLost = 15;
+        allTasks[i].chanceToRecruit = 0;
+        allTasks[i].ownTrustAdd = 0;
         i++;
 
         //
@@ -78,10 +78,10 @@ public class EdTasksDistribution : MonoBehaviour
         allTasks[i].trustAdd = 5;
         allTasks[i].evilScoreAdd = 10;
 
-        allTasks[i].chanceToLose = 20f;
-        allTasks[i].chanceToLost = 10f;
-        allTasks[i].chanceToRecruit = 5f;
-        allTasks[i].ownTrustAdd = 0f;
+        allTasks[i].chanceToLose = 20;
+        allTasks[i].chanceToLost = 10;
+        allTasks[i].chanceToRecruit = 5;
+        allTasks[i].ownTrustAdd = 0;
         i++;
 
         //
@@ -93,10 +93,10 @@ public class EdTasksDistribution : MonoBehaviour
         allTasks[i].trustAdd = -5;
         allTasks[i].evilScoreAdd = 10;
 
-        allTasks[i].chanceToLose = 0f;
-        allTasks[i].chanceToLost = 25f;
-        allTasks[i].chanceToRecruit = 0f;
-        allTasks[i].ownTrustAdd = 0f;
+        allTasks[i].chanceToLose = 0;
+        allTasks[i].chanceToLost = 25;
+        allTasks[i].chanceToRecruit = 0;
+        allTasks[i].ownTrustAdd = 0;
         i++;
 
         //
@@ -108,10 +108,10 @@ public class EdTasksDistribution : MonoBehaviour
         allTasks[i].trustAdd = -10;
         allTasks[i].evilScoreAdd = 5;
 
-        allTasks[i].chanceToLose = 15f;
-        allTasks[i].chanceToLost = 0f;
-        allTasks[i].chanceToRecruit = 0f;
-        allTasks[i].ownTrustAdd = 0f;
+        allTasks[i].chanceToLose = 15;
+        allTasks[i].chanceToLost = 0;
+        allTasks[i].chanceToRecruit = 0;
+        allTasks[i].ownTrustAdd = 0;
         i++;
 
 
@@ -124,10 +124,10 @@ public class EdTasksDistribution : MonoBehaviour
         allTasks[i].trustAdd = -15;
         allTasks[i].evilScoreAdd = 30;
 
-        allTasks[i].chanceToLose = 10f;
-        allTasks[i].chanceToLost = 20f;
-        allTasks[i].chanceToRecruit = 0f;
-        allTasks[i].ownTrustAdd = 0f;
+        allTasks[i].chanceToLose = 10;
+        allTasks[i].chanceToLost = 20;
+        allTasks[i].chanceToRecruit = 0;
+        allTasks[i].ownTrustAdd = 0;
         i++;
 
         //
@@ -139,10 +139,10 @@ public class EdTasksDistribution : MonoBehaviour
         allTasks[i].trustAdd = -5;
         allTasks[i].evilScoreAdd = 10;
 
-        allTasks[i].chanceToLose = 0f;
-        allTasks[i].chanceToLost = 0f;
-        allTasks[i].chanceToRecruit = 15f;
-        allTasks[i].ownTrustAdd = 0f;
+        allTasks[i].chanceToLose = 0;
+        allTasks[i].chanceToLost = 0;
+        allTasks[i].chanceToRecruit = 15;
+        allTasks[i].ownTrustAdd = 0;
         i++;
 
         //
@@ -154,10 +154,10 @@ public class EdTasksDistribution : MonoBehaviour
         allTasks[i].trustAdd = 5;
         allTasks[i].evilScoreAdd = 0;
 
-        allTasks[i].chanceToLose = 0f;
-        allTasks[i].chanceToLost = 0f;
-        allTasks[i].chanceToRecruit = 15f;
-        allTasks[i].ownTrustAdd = 0f;
+        allTasks[i].chanceToLose = 0;
+        allTasks[i].chanceToLost = 0;
+        allTasks[i].chanceToRecruit = 15;
+        allTasks[i].ownTrustAdd = 0;
         i++;
 
 
