@@ -72,15 +72,15 @@ public class EdTasksDistribution : MonoBehaviour
         //
 
         allTasks[i] = new EdTasksC();
-        allTasks[i].description = "\"Help\" The Police With The Investigation";
+        allTasks[i].description = "Tweet About People's Rights";
 
         allTasks[i].moneyAdd = 0;
-        allTasks[i].trustAdd = 5;
-        allTasks[i].evilScoreAdd = 10;
+        allTasks[i].trustAdd = 10;
+        allTasks[i].evilScoreAdd = -5;
 
-        allTasks[i].chanceToLose = 20;
-        allTasks[i].chanceToLost = 10;
-        allTasks[i].chanceToRecruit = 5;
+        allTasks[i].chanceToLose = 0;
+        allTasks[i].chanceToLost = 0;
+        allTasks[i].chanceToRecruit = 0;
         allTasks[i].ownTrustAdd = 0;
         i++;
 
@@ -93,10 +93,10 @@ public class EdTasksDistribution : MonoBehaviour
         allTasks[i].trustAdd = -5;
         allTasks[i].evilScoreAdd = 10;
 
-        allTasks[i].chanceToLose = 0;
-        allTasks[i].chanceToLost = 25;
+        allTasks[i].chanceToLose = 25;
+        allTasks[i].chanceToLost = 75;
         allTasks[i].chanceToRecruit = 0;
-        allTasks[i].ownTrustAdd = 0;
+        allTasks[i].ownTrustAdd = 25;
         i++;
 
         //

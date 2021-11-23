@@ -15,6 +15,10 @@ public class Card : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
     void Awake()
     {
         mainCamera = Camera.main;
+    }
+
+    void Start()
+    {
         HandParent = transform.parent;
     }
 

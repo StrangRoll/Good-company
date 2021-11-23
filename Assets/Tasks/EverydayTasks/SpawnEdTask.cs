@@ -11,13 +11,18 @@ public class SpawnEdTask : MonoBehaviour
     [SerializeField] SendAkTasksEvent edTasksEvent;
     void Start()
     {
-        SpawnTasks();
+        AllEdTasks = new List<EdTask>();
+        SpawnTasks(humanCount);
     }
 
-    void SpawnTasks()
+    public void SpawnTasks(int humanCount)
     {
-        AllEdTasks = new List<EdTask>() { EdTaskExample.GetComponent<EdTask>() };
-        for (int i = 1; i< humanCount + 2; i++)
+        foreach (var i in AllEdTasks)
+        {
+            Destroy(i.gameObject);
+        }
+        AllEdTasks = new List<EdTask>();
+        for (int i = 0; i< humanCount + 2; i++)
         {
             Transform newEdTask = Instantiate(EdTaskExample);
             newEdTask.SetParent(TasksParent, false);
