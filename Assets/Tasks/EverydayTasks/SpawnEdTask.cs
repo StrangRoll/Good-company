@@ -13,6 +13,7 @@ public class SpawnEdTask : MonoBehaviour
         {
             Transform newEdTask = Instantiate(EdTaskExample);
             newEdTask.SetParent(TasksParent, false);
+
         }
     }
 
