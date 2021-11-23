@@ -3248,6 +3248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1939463552}
+  - component: {fileID: 1939463553}
   m_Layer: 0
   m_Name: ResourcesController
   m_TagString: Untagged
@@ -3269,3 +3270,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1939463553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939463551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55e7d89278916d44816797258290f98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  people: {fileID: 201565367}
+  trust: {fileID: 1795995474}
+  money: {fileID: 110608579}
+  evilScore: {fileID: 1272441352}
