@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class EdTasksDistribution : MonoBehaviour
 {
-    [HideInInspector] public EdTasksC[] allTasks;
+    [HideInInspector] public List<EdTasksC> allTasks;
     // Start is called before the first frame update
     void Awake()
     {
         int i = 0;
-        allTasks = new EdTasksC[10];
+        allTasks = new List<EdTasksC>();
 
-        allTasks[i] = new EdTasksC();
+        allTasks.Add(new EdTasksC());
         allTasks[i].description = "\"Fix\" A Neighbor's Car";
 
         allTasks[i].moneyAdd = 0;
@@ -25,8 +25,7 @@ public class EdTasksDistribution : MonoBehaviour
         i++;
 
         //
-
-        allTasks[i] = new EdTasksC();
+        allTasks.Add(new EdTasksC());
         allTasks[i].description = "Organize A \"Charity\"";
 
         allTasks[i].moneyAdd = 25;
@@ -40,8 +39,7 @@ public class EdTasksDistribution : MonoBehaviour
         i++;
 
         //
-
-        allTasks[i] = new EdTasksC();
+        allTasks.Add(new EdTasksC());
         allTasks[i].description = "Buy \"Medicine\" For An Old Lady";
 
         allTasks[i].moneyAdd = 0;
@@ -55,8 +53,7 @@ public class EdTasksDistribution : MonoBehaviour
         i++;
 
         //
-
-        allTasks[i] = new EdTasksC();
+        allTasks.Add(new EdTasksC());
         allTasks[i].description = "Save People From \"Unnecessary\" Things";
 
         allTasks[i].moneyAdd = 20;
@@ -70,8 +67,7 @@ public class EdTasksDistribution : MonoBehaviour
         i++;
 
         //
-
-        allTasks[i] = new EdTasksC();
+        allTasks.Add(new EdTasksC());
         allTasks[i].description = "Tweet About People's Rights";
 
         allTasks[i].moneyAdd = 0;
@@ -85,8 +81,7 @@ public class EdTasksDistribution : MonoBehaviour
         i++;
 
         //
-
-        allTasks[i] = new EdTasksC();
+        allTasks.Add(new EdTasksC());
         allTasks[i].description = "Selling Cookies \"Without Drugs\"";
 
         allTasks[i].moneyAdd = 35;
@@ -100,8 +95,7 @@ public class EdTasksDistribution : MonoBehaviour
         i++;
 
         //
-
-        allTasks[i] = new EdTasksC();
+        allTasks.Add(new EdTasksC());
         allTasks[i].description = "Offer To Invest Money In A \"Non-Pyramid Scheme\"";
 
         allTasks[i].moneyAdd = 25;
@@ -116,8 +110,7 @@ public class EdTasksDistribution : MonoBehaviour
 
 
         //
-
-        allTasks[i] = new EdTasksC();
+        allTasks.Add(new EdTasksC());
         allTasks[i].description = "Give Children \"A Toy\" In The Form Of A Grenade";
 
         allTasks[i].moneyAdd = 0;
@@ -131,8 +124,7 @@ public class EdTasksDistribution : MonoBehaviour
         i++;
 
         //
-
-        allTasks[i] = new EdTasksC();
+        allTasks.Add(new EdTasksC());
         allTasks[i].description = "Distribute \"Fresh\" Food To The Homeless";
 
         allTasks[i].moneyAdd = 0;
@@ -146,8 +138,7 @@ public class EdTasksDistribution : MonoBehaviour
         i++;
 
         //
-
-        allTasks[i] = new EdTasksC();
+        allTasks.Add(new EdTasksC());
         allTasks[i].description = "Promise World Peace";
 
         allTasks[i].moneyAdd = 0;
@@ -165,6 +156,6 @@ public class EdTasksDistribution : MonoBehaviour
 
     public EdTasksC GetRandomEdTask()
     {
-        return allTasks[Random.Range(0, allTasks.Length)];
+        return allTasks[Random.Range(0, allTasks.Count)];
     }
 }

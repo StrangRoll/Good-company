@@ -6,15 +6,22 @@ using UnityEngine.Events;
 public class NextTurnS : MonoBehaviour
 {
     private List<EdTask> allEdTasks;
+    private bool playerSawResult = false;
+    [SerializeField] private SetAciveResult setActiveResultEvent;
 
     void Update()
-    {
-        float nextTurnInput;
-        nextTurnInput = Input.GetAxis("NextTurn");
-        if (nextTurnInput > 0.2)
+    { 
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            NextTurnFunc();
+            if (!playerSawResult)NextTurnFunc();
+            else GetCardBack();
         }
+    }
+
+    private void GetCardBack()
+    {
+        playerSawResult = false;
+        setActiveResultEvent?.Invoke(false);
     }
 
     private void NextTurnFunc()
@@ -30,10 +37,12 @@ public class NextTurnS : MonoBehaviour
         }
         if (isDone)
         {
+            setActiveResultEvent?.Invoke(true);
             foreach (var i in allEdTasks)
             {
                 i.SendResourcesChange();
             }
+            playerSawResult = true;
         }
     }
 
@@ -43,3 +52,6 @@ public class NextTurnS : MonoBehaviour
     }
 
 }
+
+[System.Serializable]
+public class SetAciveResult : UnityEvent<bool> { }
