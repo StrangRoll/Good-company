@@ -7,9 +7,9 @@ public class SeeResults : MonoBehaviour
 {
     private int peopleCount = 0;
 
-    public void CardToEachResult(Transform card, int[] resources)
+    public void CardToEachResult(Transform card, string description, int[] resources)
     {
-        SetResults(resources[0], resources[1], resources[2], resources[3]);
+        SetResults(resources[0], resources[1], resources[2], resources[3], description);
         Transform newPlace = transform.GetChild(peopleCount);
         newPlace.gameObject.SetActive(true);
         if (card) card.SetParent(newPlace.GetChild(0));
@@ -30,16 +30,21 @@ public class SeeResults : MonoBehaviour
         }
         gameObject.SetActive(active);
     }
-
-    public void SetResults(int people, int trust, int money, int evilScore)
+    
+    private void SetResults(int people, int trust, int money, int evilScore, string description)
     {
-        Transform textPlacer = transform.GetChild(peopleCount).GetChild(1);
+        Transform textResourcesPlacer = transform.GetChild(peopleCount).GetChild(1);
 
-        textPlacer.GetChild(2).GetComponent<TextMeshProUGUI>().text = people.ToString();
-        textPlacer.GetChild(3).GetComponent<TextMeshProUGUI>().text = trust.ToString();
-        textPlacer.GetChild(6).GetComponent<TextMeshProUGUI>().text = money.ToString();
-        textPlacer.GetChild(7).GetComponent<TextMeshProUGUI>().text = evilScore.ToString();
+        textResourcesPlacer.GetChild(2).GetComponent<TextMeshProUGUI>().text = people.ToString();
+        textResourcesPlacer.GetChild(3).GetComponent<TextMeshProUGUI>().text = trust.ToString();
+        textResourcesPlacer.GetChild(6).GetComponent<TextMeshProUGUI>().text = money.ToString();
+        textResourcesPlacer.GetChild(7).GetComponent<TextMeshProUGUI>().text = evilScore.ToString();
+        
+        //
 
+        Transform textDescritionPlacer = transform.GetChild(peopleCount).GetChild(2);
+
+        textDescritionPlacer.GetComponent<TextMeshProUGUI>().text = description;
     }
 
     public void GetItBack(Card card)
